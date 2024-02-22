@@ -7,8 +7,9 @@ declare(strict_types=1);
 // $stagiaires[1][1]="Kévin";
 
 // include_once 'rectangle.php';
-
 // include_once 'stagiaires.php';
+include_once 'youtuber.php';
+
 // $stagiaire= new Stagiaire();
 // $stagiaire->nom="DUPONT";
 // $stagiaire->prenom="Martin";
@@ -25,6 +26,16 @@ declare(strict_types=1);
 // $newRectangle= new Rectangle();
 // $newRectangle->longueur=5;
 // $newRectangle->largeur=5;
+
+$voiture=[];
+$voitures=[];
+for ($i=1; $i < 11 ; $i++) { 
+    $voiture= new Voiture();
+    $voitures[]=$voiture;
+}
+// var_dump($voitures);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -35,11 +46,10 @@ declare(strict_types=1);
     <title>Document</title>
 </head>
 <body>
-    <?php
-    // var_dump($stagiaires);
-    // foreach ($stagiaires as $key => $value) {
-    //     echo $value->salutation();?>
-     <!-- </p> -->
+    <?php /*
+     var_dump($stagiaires);
+     foreach ($stagiaires as $key => $value) {
+         echo $value->salutation(); */ ?>
     <?php
     /*
      echo $newRectangle->calculerPerimetre();?>
@@ -52,5 +62,9 @@ declare(strict_types=1);
      echo $newRectangle->estUnLosange();
      */
      ?>
+
+    <?php
+    // echo($garage);
+    ?>
 </body>
 </html>
