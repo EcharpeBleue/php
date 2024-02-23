@@ -8,22 +8,15 @@
  
 function routingPage(Array $pGetRecieved):String
 {
-   /**
- * AJOUTER LE CODE MANQUANT!
- */
 if (!isset($pGetRecieved['page'])) {
    return 'home';
 }
 
 switch ($pGetRecieved['page']) {
-  case 'home':
-      return 'home';
   case 'list':
       return 'list';
   case 'details':
       return 'details';
-  case 'pageinconnue':
-      return 'home';
   default:
      return 'home';
 }
@@ -31,21 +24,20 @@ switch ($pGetRecieved['page']) {
 
 function getParamSearch($pGetRecieved):String
 {
-  /**
- * AJOUTER LE CODE MANQUANT!
- */
 if (isset($pGetRecieved['nom'])) {
-   return $pGetRecieved['nom'];
+    $pGetRecieved=strtoupper($pGetRecieved['nom']);
+   return $pGetRecieved;
 } else {
 return "";
 }
 }
 function getParamDetail($pGetRecieved):String
 {
-   /**
- * AJOUTER LE CODE MANQUANT!
- */
-   return "details";
+if (isset($pGetRecieved['id'])) {
+    return $pGetRecieved['id'];}
+    else {
+        return "";
+    }
 }
 function showPage(String $pTemplate,$data = [])
 {

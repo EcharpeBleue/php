@@ -1,0 +1,17 @@
+{
+    "name": "jpa/getter-setter",
+    "autoload": {
+        "psr-4": {
+            "Jpa\\GetterSetter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EcharpeRouge",
+            "email": "zawiczrczarny@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    }
+}
