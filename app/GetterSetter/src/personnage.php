@@ -36,11 +36,10 @@ class Personnage
     {
         return $this->_pointsDeVie = $pointsDeVie;
     }
-    public function estNegatif():
+    public function estNegatif()
     {
         if($this->getPointsDeVie()<=0)
         {
-            return 
         }
     }
 }
