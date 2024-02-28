@@ -52,7 +52,7 @@ Class Raid{
     {
         echo "<p> Nom du raid :". $this->nomRaid."</p>";
         echo "<p> Lieu du raid :". $this->lieu."</p>";
-        echo "<p> Date du raid :". $this->date."</p>";
+        echo "<p> Date du raid :". $this->date."</p>"; // Will need fixing
         echo "<p> Niveau Requis :".$this->niveauRequis."</p>";
     }
 }
