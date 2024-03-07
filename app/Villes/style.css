@@ -1,0 +1,8 @@
+.paragrapheColle{
+    display: flex;
+    justify-content: space-around;
+}
+.downwardParagraphe
+{
+    flex-wrap: wrap;
+}
