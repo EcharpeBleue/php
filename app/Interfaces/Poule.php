@@ -16,6 +16,6 @@ class Poule extends Animal implements IOvipare,IHerbivore,ICarnivore {
 
     public function brouter(): void
     {
-        echo $this->nom . " , si il/elle ne broute techniquement pas, est tout de même capable de picorer quelques verdures.\n";
+        echo $this->nom . ", si il/elle ne broute techniquement pas, est tout de même capable de picorer quelques verdures.\n";
     }
 }
